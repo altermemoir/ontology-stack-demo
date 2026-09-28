@@ -68,4 +68,9 @@ Both paths reach the same destination. The transcripts are your safety net; the 
 
 ## Maintenance note
 
-These prompt packs duplicate the source artifacts (CSVs, YAML, Turtle) inline so they are paste-ready. If you change a source artifact in [`../01-lakehouse/`](../01-lakehouse/), [`../02-semantic-layer/`](../02-semantic-layer/), [`../03-knowledge-graph/`](../03-knowledge-graph/), or [`../04-ontology/`](../04-ontology/), you'll need to mirror the change here. The source artifacts remain authoritative for editing; the prompt packs are presentation copies.
+The prompt packs are the source of truth for the demo data. Each pack inlines the artifacts for its layer and every layer below it (CSVs, YAML, Turtle, OWL/SHACL), so the same data appears in more than one pack. If you change an artifact:
+
+1. Mirror the change in every pack that includes it (a CSV edit touches all four packs).
+2. Re-check the expected answers in the cheat sheet above.
+3. Update the matching transcript in [`../transcripts/`](../transcripts/).
+4. Update any slide in the deck that quotes the data (slides 5, 8, 12, 14, and 18–21).

@@ -1,6 +1,6 @@
 # Layer 1 transcript — "What was our total revenue in 2025?"
 
-The lakehouse demo. The LLM has the five raw CSVs from [`../01-lakehouse/`](../01-lakehouse/) and nothing else: opaque column headers (`Col001` - `Col031`), no documentation, no codelists, no schema. We ask it a question that should be trivial — last year's revenue — and watch how much guesswork it takes to get there.
+The lakehouse demo. The LLM has the five raw CSVs (inlined in [`../live-demo/01-lakehouse-prompt.md`](../live-demo/01-lakehouse-prompt.md)) and nothing else: opaque column headers (`Col001` - `Col031`), no documentation, no codelists, no schema. We ask it a question that should be trivial — last year's revenue — and watch how much guesswork it takes to get there.
 
 **Ground truth:** **$8,024.00** — sum of `Col014` across the 15 rows of `orders_raw.csv` where `Col013 = "COMPLETED"` and `Col012` falls in calendar year 2025.
 

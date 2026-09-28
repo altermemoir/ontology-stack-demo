@@ -1,6 +1,6 @@
 # Layer 4 transcript — "Which VIP customers cannot receive promo email under their region's marketing rules?"
 
-The ontology demo. The payoff. The LLM has the full stack: CSVs, semantic model, knowledge graph, **and** the OWL classes + SHACL rules from [`../04-ontology/`](../04-ontology/). We ask a question that combines two derived class memberships and a policy rule, and watch the LLM stop *inventing* and start *citing*.
+The ontology demo. The payoff. The LLM has the full stack: CSVs, semantic model, knowledge graph, **and** the OWL classes + SHACL rules (inlined in [`../live-demo/04-ontology-prompt.md`](../live-demo/04-ontology-prompt.md)). We ask a question that combines two derived class memberships and a policy rule, and watch the LLM stop *inventing* and start *citing*.
 
 **Ground truth:** **C001 Anna Schmidt** and **C008 Priya Patel**. VIPs (lifetime spend ≥ $1500) who live in restricted-marketing regions (DE and GB respectively) and have not opted in to promotional email.
 

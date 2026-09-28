@@ -1,6 +1,6 @@
 # Layer 3 transcript — "Which customers are at risk of churning?"
 
-The knowledge-graph demo. The LLM has the CSVs, the semantic model, *and* the full RDF knowledge graph from [`../03-knowledge-graph/`](../03-knowledge-graph/). Each `nw:Customer` carries pre-computed aggregate facts: `nw:totalLifetimeSpend`, `nw:lastOrderDate`, `nw:openComplaintCount`. We ask "who's at risk of churning?" and watch the LLM hit the wall the ontology is built for.
+The knowledge-graph demo. The LLM has the CSVs, the semantic model, *and* the full RDF knowledge graph (inlined in [`../live-demo/03-kg-prompt.md`](../live-demo/03-kg-prompt.md)). Each `nw:Customer` carries pre-computed aggregate facts: `nw:totalLifetimeSpend`, `nw:lastOrderDate`, `nw:openComplaintCount`. We ask "who's at risk of churning?" and watch the LLM hit the wall the ontology is built for.
 
 **Ground truth (per the ontology, which the LLM does *not* yet see):** **C003 Yuki Tanaka, C009 Klaus Weber**. Both have `lastOrderDate` more than 180 days before today (2026-06-01) AND `openComplaintCount >= 1`. Both conditions are required — C007 Carlos has no recent order but his complaint is *resolved*, so he is excluded.
 

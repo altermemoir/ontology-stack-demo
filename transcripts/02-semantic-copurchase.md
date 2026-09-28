@@ -1,6 +1,6 @@
 # Layer 2 transcript — "Which products are most frequently purchased together?"
 
-The semantic-layer demo. The LLM has the same five CSVs as before *plus* the semantic model ([`../02-semantic-layer/semantic_model.yml`](../02-semantic-layer/semantic_model.yml)) that gives every opaque column a business name and declares foreign keys. We ask a question whose shape is **relational** — products co-occurring across orders — and watch the LLM author a SQL self-join from scratch.
+The semantic-layer demo. The LLM has the same five CSVs as before *plus* the semantic model (`semantic_model.yml`, inlined in [`../live-demo/02-semantic-prompt.md`](../live-demo/02-semantic-prompt.md)) that gives every opaque column a business name and declares foreign keys. We ask a question whose shape is **relational** — products co-occurring across orders — and watch the LLM author a SQL self-join from scratch.
 
 **Ground truth:** three pairs tied at 2 co-occurrences each.
 
